@@ -11,7 +11,7 @@ function userinput(){
 userinput()
 
 let welcome = prompt ('Welcome to my world!!')
-console.log('welcome user to Site');
+//console.log('welcome user to Site');
 
 let play = prompt('Ready to Play A Game');
 switch(play.toLowerCase())
@@ -116,23 +116,24 @@ switch(family.toLowerCase())
 listofitems = prompt('Guess the fruits I like');
 if(listofitems === 'strawberries'){
 alert('correct');
-}else if(listofitems === 'peaches'){
+console.log(listofitems);
+}if(listofitems === 'peaches'){
 alert('correct');
-}else if(listofitems === 'blueberries')
+console.log(listofitems);
+}if(listofitems === 'blueberries'){
 alert('correct');
-else if(listofitems ==='watermelon'){
+}else if(listofitems ==='watermelon'){
 alert('correct');
-if (listofitems ==='')
-alert('Try again')
-break;
-  
-
+}else if(listofitems === ""){
+alert('Try again');break;
 }
 
-if (i === 6) {
-  userPoints++;
+
+
+if (i === 6){
+  userpoints++;
 } alert('better luck next time');
-alert(`you have ${userPoints} points`);
+alert(`you have ${userpoints} points`);
  break;
 }
   
