@@ -1,7 +1,16 @@
-h1{
+h2{
   background-color: rgb(9, 255, 0);
   color: blueviolet;
   margin-right: 25px;
+}
+
+h1{color:red;
+  background-color: rgba(0, 0, 0, 0.616);
+
+}
+
+li{list-style-type: style lower-roman; ;
+
 }
 
 p{

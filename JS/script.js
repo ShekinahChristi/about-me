@@ -4,13 +4,13 @@ let username = prompt ('What is your name');
 alert('Hello ' + username)
 console.log(`Say hey to ${username}`)
 
-function userinput(){
+function userInput(){
   document.write(`Hi ${username} I had fun playing with you.`)
 
 }
-userinput()
+userInput()
 
-let welcome = prompt ('Welcome to my world!!')
+alert ('Welcome to my world!!')
 //console.log('welcome user to Site');
 
 let play = prompt('Ready to Play A Game');
@@ -57,8 +57,8 @@ switch(age.toLowerCase())
     
 }
 
-let Tenn = prompt('I am from Tennesse');
-switch(Tenn.toLowerCase())
+let tenn = prompt('I am from Tennesse');
+switch(tenn.toLowerCase())
 { 
   case 'yes':
   console.log('Wrong again');
@@ -110,31 +110,28 @@ switch(family.toLowerCase())
 
  let userpoints = 0;
  let listofitems = ['strawberries','blueberries','peaches','watermelon'];
+ let FavFruits;
 
- for (let i = 0; i < listofitems.length; i=i+1) {
+ for (let i = 0; i < 6; i=i+1) {
   console.log(listofitems[i]);
-listofitems = prompt('Guess the fruits I like');
-if(listofitems === 'strawberries'){
+FavFruits = prompt('Guess 4 fruits I like');
+if(FavFruits === listofitems){
+  userpoints++;
 alert('correct');
 console.log(listofitems);
-}if(listofitems === 'peaches'){
-alert('correct');
+}else if(FavFruits !=listofitems){
+  userpoints++;
+alert('You Lose');
 console.log(listofitems);
-}if(listofitems === 'blueberries'){
-alert('correct');
-}else if(listofitems ==='watermelon'){
-alert('correct');
-}else if(listofitems === ""){
-alert('Try again');break;
+break;
 }
-
-
 
 if (i === 6){
   userpoints++;
-} alert('better luck next time');
-alert(`you have ${userpoints} points`);
- break;
+  alert('better luck next time');
+  alert(`you have ${userpoints} points`);
+   break;
+} 
 }
   
 
