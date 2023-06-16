@@ -1,11 +1,11 @@
 'use strict';
 
-let username = prompt('What is your name');
-alert('Hello ' + username);
-console.log(`Say hey to ${username}`);
+let userName = prompt('What is your name');
+alert('Hello ' + userName);
+console.log(`Say hey to ${userName}`);
 
 function userInput(){
-  document.write(`Hi ${username} I had fun playing with you.`)
+  document.write(`Hi ${userName} I had fun playing with you.`)
 
 }
 userInput();
@@ -64,7 +64,8 @@ default:
 }
 myAge('Am I 35 years old ');
 
-let tenn = prompt('I am from Tennesse');
+function state(userinput){
+let tenn = prompt(userinput);
 switch(tenn.toLowerCase())
 { 
   case 'yes':
@@ -79,7 +80,7 @@ case 'no':
 default:
   alert('invalid');
 }
-
+}
 state('Am I from Tennesse');
 
 function siblings(userinput){
@@ -96,7 +97,7 @@ case 'no':
   alert('Correct I have four beautiful siblings');
   break;
 default:
-  console.log(`${username} thanks for stopping by to get to know me.`);
+  console.log(`${userName} thanks for stopping by to get to know me.`);
 }
 }
 siblings('Do I have two siblings?');
