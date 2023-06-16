@@ -115,7 +115,7 @@ switch(family.toLowerCase())
  for (let i = 0; i < 6; i=i+1) {
   console.log(listofitems[i]);
 FavFruits = prompt('Guess 4 fruits I like');
-if(FavFruits === listofitems){
+if(FavFruits === listofitems[0]||FavFruits === listofitems[1]||FavFruits === listofitems[2]||FavFruits === listofitems[3]){
   userpoints++;
 alert('correct');
 console.log(listofitems);
@@ -126,14 +126,13 @@ console.log(listofitems);
 break;
 }
 
-if (i === 6){
-  userpoints++;
+if (i === 5){
   alert('better luck next time');
-  alert(`you have ${userpoints} points`);
-   break;
+  break;
 } 
 }
-  
+
+alert(`you have ${userpoints} points`);
 
   
   
