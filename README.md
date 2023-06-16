@@ -25,3 +25,5 @@ Lab Class 04
 Driver - Eric Baxter
 
 Navigator - Chyna Christian
+
+![image](https://github.com/ShekinahChristi/about-me/assets/135853220/cce30c3e-605f-4dfa-91eb-d19f810776b9)
